@@ -1,3 +1,9 @@
+
+-- File: 02_insert_data.sql
+-- Description: Populates the gym database with sample data for testing.
+-- Focus: Ensuring data integrity and testing foreign key constraints.
+
+
 USE gym_project;
 
 INSERT INTO memberships (membership_id, membership_type, membership_price, membership_start, membership_expiry)
