@@ -1,3 +1,26 @@
+# 🏋️ Relational Database Design w/ SQL: Gym Management System
+
+A complete SQL project building a fully normalized relational database from scratch to manage a gym's daily operations. It demonstrates my ability to design complex database schemas, enforce data integrity, handle financial/operational data, and write business-intelligence queries.
+
+> 💡 **Architectural Note:** Due to DuckDB's current limitations regarding cross-schema foreign key referencing, both financial and operational tables are housed within a single default schema in this project. In a production environment using PostgreSQL, these domains would be logically separated into distinct schemas (e.g., `operations.members` and `finance.payments`) to enhance security, access control, and organization.
+
+## 🧾 Executive Summary (For Hiring Managers)
+
+✅ **Project scope:** Designed and implemented a robust relational database tracking members, staff workloads, class schedules, and financials.
+✅ **Data modeling:** Built a normalized schema (3NF) utilizing Primary Keys, Foreign Keys, and a bridge table to resolve many-to-many relationships.
+✅ **Data Quality:** Applied strict constraints (`NOT NULL`, `UNIQUE`, `CHECK`) to ensure absolute data integrity for user information and financial transactions.
+✅ **Analytics:** Wrote operational queries to audit revenue, calculate instructor workloads, and track member retention.
+
+*If you only have a minute, click below to view the code:*
+* 🏗️ **[01_create_gym_tables.sql](https://github.com/Kareem5552/Gym_SQL_Project/blob/master/Gym_SQL_Project/1_create_gym_tables.sql)** – DDL scripts showcasing schema design and constraint logic.
+* 📥 **[02_insert_gym_data.sql](https://github.com/Kareem5552/Gym_SQL_Project/blob/master/Gym_SQL_Project/2_insert_gym_data.sql)** – Data ingestion and realistic sample records.
+* 📊 **[03_Buisness_questions.sql](https://github.com/Kareem5552/Gym_SQL_Project/blob/master/Gym_SQL_Project/3_Buisness_questions.sql)** – Business intelligence queries and operational analytics.
+
+---
+
+## 🧩 Entity Relationship Diagram (ERD)
+*The following diagram illustrates the relational structure of the database, including 1-to-1, 1-to-Many, and Many-to-Many relationships.*
+
 ```mermaid
 erDiagram
     %% Core Relationships
