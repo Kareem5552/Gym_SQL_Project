@@ -1,3 +1,6 @@
+-- Description: Schema definition for the Gym Management System.
+-- Focus: Relational integrity, data types, and constraint enforcement.
+
 USE gym_project;
 
 DROP TABLE IF EXISTS expenses;
