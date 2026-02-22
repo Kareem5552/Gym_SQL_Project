@@ -1,3 +1,4 @@
+```mermaid
 erDiagram
     %% Core Relationships
     MEMBERSHIPS ||--o{ MEMBERS : "has"
